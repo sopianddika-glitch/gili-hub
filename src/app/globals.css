@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-dm-sans), Arial, Helvetica, sans-serif;
+  --color-background: #fcfbf8;
+  --color-foreground: #193c3d;
+  --color-ocean: #173d40;
+  --color-teal: #24665f;
+  --color-seafoam: #bfe8d8;
+  --color-coral: #bd4c34;
+  --color-sand: #f3f1e9;
+  --color-line: #e4e5dc;
+  --color-muted: #5b6c69;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-background); color: var(--color-foreground); }
+::selection { background: var(--color-seafoam); color: var(--color-ocean); }
+:focus-visible { outline: 3px solid var(--color-coral); outline-offset: 5px; }
+button:disabled, input:disabled { cursor: not-allowed; }
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+
+@layer components {
+  .eyebrow { @apply text-[10px] font-bold tracking-[0.18em] uppercase text-teal sm:text-[11px]; }
+  .section-title { @apply text-3xl leading-tight font-bold tracking-[-0.04em] sm:text-4xl; }
+  .nav-link { @apply inline-flex min-h-11 items-center text-sm transition-colors hover:text-coral; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; }
+}
