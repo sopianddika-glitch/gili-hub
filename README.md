@@ -1,5 +1,7 @@
 # Gili Hub
 
+Repository: https://github.com/sopianddika-glitch/gili-hub · primary branch: `main`.
+
 A modular foundation for a local discovery and island services platform focused on Gili Trawangan, Lombok, Indonesia. English is the initial interface language; Indonesian is a future phase.
 
 This is project initialization only: a responsive landing page, explicit inactive category/search previews, shared design foundation, and an application health endpoint. There are no business records, reviews, reservations, payments, authentication, maps, or external service connections.
@@ -122,7 +124,7 @@ Type checking and linting are not bypassed. Security response headers include `X
 
 The starter sets `robots` to `noindex, nofollow` intentionally. At public launch set the canonical production URL, metadata base, verified social imagery, robots policy, and sitemap. Configure a CSP for the actual production integrations rather than inventing one now.
 
-Deploy later with a Next.js-compatible host such as Vercel, using Node 24, `npm ci`, and `npm run build`. A Node host runs `npm start`; this is not a static-only export because `/api/health` is a server endpoint. No deployment, GitHub remote creation, or push is performed in this phase.
+Deploy later with a Next.js-compatible host such as Vercel, using Node 24, `npm ci`, and `npm run build`. A Node host runs `npm start`; this is not a static-only export because `/api/health` is a server endpoint. GitHub synchronization was requested after initialization. The owner created the public `sopianddika-glitch/gili-hub` repository; local `origin` targets it. GitHub source hosting does not itself provide a running Next.js preview. No application deployment has been performed.
 
 ## Validation
 
